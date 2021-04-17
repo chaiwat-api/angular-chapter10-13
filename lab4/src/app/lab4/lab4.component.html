@@ -1,0 +1,14 @@
+<ul>
+    <div *ngFor="let item of child_array">
+
+        <div *ngIf="(item %2) === 0; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+            <p class="number-even">{{item}}</p>
+        </ng-template>
+        <ng-template #elseBlock>
+            <p class="number-odd">{{item}}</p>
+        </ng-template>
+
+    </div>
+
+</ul>
