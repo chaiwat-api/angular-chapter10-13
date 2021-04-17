@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<app-to-do-list [items]="task_items"></app-to-do-list>
+
+<div>
+  <label> Task: </label><input type="text" [(ngModel)]="current_task">
+  <button (click)="addTask()">Add</button>
+</div>
